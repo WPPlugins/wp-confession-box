@@ -1,0 +1,125 @@
+#confessions_area_inner {
+  border: 3px solid #eee;
+  height: 500px;
+  width: 100%;
+  overflow: auto;
+}
+
+.hide_new{
+  display: none;
+}
+.show_new{
+  display: block;
+}
+.new_feeds {
+  background: #eee none repeat scroll 0 0;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 5px auto;
+  position: relative;
+  text-align: center;
+  top: 57px;
+  width: 25%;
+}
+#odd_confessions, #even_confessions {
+  float: left;
+  padding: 20px;
+  width: 45%;
+}
+#confessions_area_inner p {
+  border: 1px solid #eee;
+  border-radius: 0;
+  color: #202020;
+  float: left;
+  font-family: verdana;
+  font-size: 12px;
+  /*margin: 23px;*/
+  padding: 20px;
+  width: 100%;
+}
+
+#confession_form label,#confession_form input,#confession_form select,#confession_form textarea {
+  border-radius: 3px;
+    float: left;
+    margin: 5px auto;
+    width: 49%;
+}
+#confession_form textarea{
+	min-height:200px;
+	clear: both;
+	width:100%;
+}
+
+.show-success{
+  border: 2px solid green !important;
+}
+
+.show-danger{
+  border: 2px solid red !important;
+}
+
+.show-warning{
+  border: 2px solid orange !important;
+}
+
+.like-cf:hover,.dashicons:hover,.liked,.disliked,.blocked{
+  color: skyblue;
+  cursor: pointer;
+}
+
+/*#cb_who_liked{
+margin-left: 159px;
+}
+#cb_who_disliked{
+margin-left: 221px;
+}*/
+#confessions_area_inner p strong:first-child{
+  text-transform: uppercase;
+}
+#cb_who_liked, #cb_who_disliked {
+  height: 200px;
+  margin-top: 26px;
+  overflow-y: auto;
+  overflow-x:hidden;
+  position: absolute;
+  width: 13%;
+}
+
+.hide{
+  display: none;
+}
+
+#cb_who_liked > li ,#cb_who_disliked > li{
+  background: #000 none repeat scroll 0 0;
+  color: #eee;
+  list-style: outside none none;
+  opacity: 0.78;
+  padding: 5px;
+}
+
+#cb_who_liked > em, #cb_who_disliked > em {
+  background: #000 none repeat scroll 0 0;
+  clear: both;
+  color: #eee;
+  float: left;
+  list-style: outside none none;
+  opacity: 0.78;
+  padding: 5px;
+  width: 100%;
+}
+
+.wpcb_messages{
+    border: 2px solid green;
+    color: green;
+    font-family: verdana;
+    font-size: 14px;
+    margin: 20px auto;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #odd_confessions, #even_confessions {
+  width: 100%;
+}
+}
